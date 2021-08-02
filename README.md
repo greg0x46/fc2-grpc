@@ -69,3 +69,9 @@ message SearchRequest {
   - Suporte a straming
   - Design é livre
   - Geração de código
+
+----
+### protoc commands
+
+- `protoc --proto_path=proto proto/*.proto --go_out=pb`: Gera entidades em go, a partir dos arquivos .proto em /proto.
+- `protoc --proto-path=proto proto/*.proto --go_out=pb --go-grpc_out=pb`: Gera stubs para comunicação com grpc
